@@ -12,13 +12,13 @@ import * as api from '@core/api';
 import style from '@styles/Dashboard.module.css';
 
 export default function Dashboard() {
-  const [data, setData] = useState({ name: '' });
+  const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
-    api.getData()
-      .then((data) => {
+    api.getEventData()
+      .then((data: any) => {
         setData(data);
         setLoading(false);
       })
