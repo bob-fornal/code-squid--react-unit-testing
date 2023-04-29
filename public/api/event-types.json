@@ -1,6 +1,6 @@
 [
   {
-    "event": "onboarding",
+    "key": "onboarding",
     "description": "Customer Onboarding",
     "tasks": [
       "customer-interview",
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "event": "annual-review",
+    "key": "annual-review",
     "description": "Annual Review",
     "tasks": [
       "background-search--google",
