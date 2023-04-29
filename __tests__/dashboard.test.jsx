@@ -5,7 +5,7 @@ import Dashboard from '../src/pages/dashboard/index';
 
 jest.mock('../src/core/api.js', () => {
   return {
-    getData: () => Promise.resolve({ name: 'TEST USER' }),
+    getEventData: () => Promise.resolve([]),
   };
 });
 
