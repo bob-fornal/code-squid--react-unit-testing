@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
 
-import styles from '@styles/Dashboard.module.css';
+import styles from '@styles/Header.module.css';
 
 type PageTitleProps = { title?: string };
 
