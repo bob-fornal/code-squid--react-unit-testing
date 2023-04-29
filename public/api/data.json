@@ -1,3 +1,117 @@
-{
-  "name": "Bob Fornal"
-}
+[
+  {
+    "eventId": 0,
+    "eventType": "onboarding",
+    "assignedTo": "bob.fornal",
+    "statusType": "pending",
+    "dateCreated": "2023-01-01T13:30:00.000Z",
+    "tasks": [
+      {
+        "key": "customer-interview",
+        "assignedTo": "bob.fornal",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:31:00.000Z"
+      },
+      {
+        "key": "background-search--google",
+        "assignedTo": "bob.fornal",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:31:00.000Z"
+      },
+      {
+        "key": "background-search--lexis-nexus",
+        "assignedTo": "bob.fornal",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:32:00.000Z"
+      },
+      {
+        "key": "process-survey",
+        "assignedTo": "bob.fornal",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:33:00.000Z"
+      },
+      {
+        "key": "management-approval",
+        "assignedTo": "bob.fornal",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:34:00.000Z"
+      }
+    ]
+  },{
+    "eventId": 1,
+    "eventType": "onboarding",
+    "assignedTo": "jen.manno",
+    "statusType": "pending",
+    "dateCreated": "2023-01-01T13:30:00.000Z",
+    "tasks": [
+      {
+        "key": "customer-interview",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:31:00.000Z"
+      },
+      {
+        "key": "background-search--google",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:31:00.000Z"
+      },
+      {
+        "key": "background-search--lexis-nexus",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:32:00.000Z"
+      },
+      {
+        "key": "process-survey",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:33:00.000Z"
+      },
+      {
+        "key": "management-approval",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:34:00.000Z"
+      }
+    ]
+  },{
+    "eventId": 2,
+    "eventType": "onboarding",
+    "assignedTo": "jen.manno",
+    "statusType": "in-progress",
+    "dateCreated": "2023-01-01T13:30:00.000Z",
+    "tasks": [
+      {
+        "key": "customer-interview",
+        "assignedTo": "paul.seebald",
+        "statusType": "in-progress",
+        "dateCreated": "2023-01-01T13:31:00.000Z"
+      },
+      {
+        "key": "background-search--google",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:31:00.000Z"
+      },
+      {
+        "key": "background-search--lexis-nexus",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:32:00.000Z"
+      },
+      {
+        "key": "process-survey",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:33:00.000Z"
+      },
+      {
+        "key": "management-approval",
+        "assignedTo": "jen.manno",
+        "statusType": "pending",
+        "dateCreated": "2023-01-01T13:34:00.000Z"
+      }
+    ]
+  }
+]
