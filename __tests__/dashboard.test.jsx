@@ -10,14 +10,14 @@ jest.mock('../src/core/api.js', () => {
 });
 
 describe('Dashboard', () => {
-  it('renders the text for Dashboard', async () => {
+  it('renders the text for Dashboard and Filter', async () => {
     await act(async () => {
       render(<Dashboard />);
     });
 
     const text = screen.getByText('Dashboard');
-    const user = screen.getByText('Name: TEST USER');
+    const filter = screen.getByText('Filter');
     expect(text).toBeInTheDocument();
-    expect(user).toBeInTheDocument();
+    expect(filter).toBeInTheDocument();
   });
 });

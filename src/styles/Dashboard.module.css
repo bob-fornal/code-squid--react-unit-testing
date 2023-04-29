@@ -1,21 +1,17 @@
 
-.anchor {
+.dashboardWrapper {
   display: flex;
-  align-items: center;
+  padding: 1em;
 }
 
-.headerFont {
-  font-family: 'monospace';
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
+.filter {
+  width: 17vw;
+}
+.content {
+  margin-left: 1em;
+  width: 80vw;
 }
 
-.logo {
-  margin-right: 2em;
-}
-
-.separator {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+.filterCard {
+  background-color: palegreen;
 }
