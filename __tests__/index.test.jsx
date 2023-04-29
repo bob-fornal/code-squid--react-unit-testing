@@ -9,7 +9,7 @@ jest.mock('../src/pages/dashboard', () => {
 });
 
 describe('Home', () => {
-  it('renders the text Home', () => {
+  it('renders the text for Home', () => {
     render(<Home />);
 
     const text = screen.getByText('Dashboard');
