@@ -1,0 +1,30 @@
+[
+  {
+    "task": "background-search--google",
+    "description": "Background Search (Google)"
+  },
+  {
+    "task": "background-search--lexis-nexus",
+    "description": "Background Search (Lexis Nexus)"
+  },
+  {
+    "task": "customer-interview",
+    "description": "Customer Interview"
+  },
+  {
+    "task": "management-approval",
+    "description": "Management Approval"
+  },
+  {
+    "task": "order-check",
+    "description": "Check for Previous Orders"
+  },
+  {
+    "task": "peer-review",
+    "description": "Peer Review"
+  },
+  {
+    "task": "process-survey",
+    "description": "Process Survey"
+  }
+]
