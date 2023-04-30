@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -65,6 +66,7 @@ function Row({ row }: RowProps): any {
                     <TableCell component="th" scope="row">Status</TableCell>
                     <TableCell component="th" scope="row">Date Created</TableCell>
                     <TableCell component="th" scope="row"></TableCell>
+                    <TableCell component="th" scope="row">Link</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -77,6 +79,9 @@ function Row({ row }: RowProps): any {
                       <TableCell>{task.statusType}</TableCell>
                       <TableCell>{task.dateCreated}</TableCell>
                       <TableCell />
+                      <TableCell>
+                        <Link href={`task/${task.key}/${row.eventId}`}>PAGE</Link>
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
