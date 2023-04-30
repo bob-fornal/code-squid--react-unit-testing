@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 import AppBar from '@mui/material/AppBar';
@@ -23,10 +24,10 @@ export default function Header({ title = '' }: PageTitleProps) {
             </>
             :
             <>
-              <a className={styles.anchor} href="/dashboard">
+              <Link className={styles.anchor} href="/dashboard">
                 <Image className={styles.logo} src="/images/code-squid.png" height={48} width={129} alt="code-squid logo" />
                 <span className={styles.headerFont}>Dashboard</span>
-              </a>
+              </Link>
               <span className={styles.separator}>&gt;</span>
               <span className={styles.headerFont}>{title}</span>
             </>
