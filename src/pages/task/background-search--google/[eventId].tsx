@@ -5,6 +5,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 
+import ActionsMenu from '@shared/actions-menu';
 import Header from '@shared/header';
 
 import { api } from '@core/api';
@@ -61,6 +62,7 @@ export default function TaskPage() {
           <div><span>Assigned To</span>: {event.assignedTo}</div>
           <div><span>Status</span>: {event.statusType}</div>
           <div><span>Date Create</span>: {event.dateCreated}</div>
+          <ActionsMenu eventId={event.eventId} taskId={task.key} />
         </CardContent>
       </Card>
 
