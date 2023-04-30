@@ -10,6 +10,7 @@ import Header from '@shared/header';
 import { api } from '@core/api';
 
 import style from '@styles/TaskPage.module.css';
+import ActionsMenu from '@shared/actions-menu';
 
 export default function TaskPage() {
   const router = useRouter();
@@ -61,6 +62,7 @@ export default function TaskPage() {
           <div><span>Assigned To</span>: {event.assignedTo}</div>
           <div><span>Status</span>: {event.statusType}</div>
           <div><span>Date Create</span>: {event.dateCreated}</div>
+          <ActionsMenu eventId={event.eventId} taskId={task.key} />
         </CardContent>
       </Card>
 

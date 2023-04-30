@@ -12,6 +12,8 @@ import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
+import ActionsMenu from '@shared/actions-menu';
+
 type RowProps = { row: any };
 
 export default function CollapsibleRow({ row }: RowProps): any {
@@ -67,7 +69,9 @@ export default function CollapsibleRow({ row }: RowProps): any {
                       <TableCell>{task.assignedTo}</TableCell>
                       <TableCell>{task.statusType}</TableCell>
                       <TableCell>{task.dateCreated}</TableCell>
-                      <TableCell />
+                      <TableCell>
+                        <ActionsMenu eventId={row.eventId} taskId={task.key} />
+                      </TableCell>
                       <TableCell>
                         <Link href={`task/${task.key}/${row.eventId}`}>PAGE</Link>
                       </TableCell>
