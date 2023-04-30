@@ -16,3 +16,9 @@
 .filterCard {
   background-color: palegreen;
 }
+
+.tools {
+  background-color: aliceblue;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
