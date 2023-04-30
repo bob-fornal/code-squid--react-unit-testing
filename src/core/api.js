@@ -1,22 +1,32 @@
 
-import _getHandler from './api-handler';
+import { _getHandler } from './api-handler';
 
-export const getEventData = () => {
-  return _getHandler('event-data', '/api/data.json');
-};
+class ApiService {
+  getHandler;
 
-export const getUserData = () => {
-  return _getHandler('user-data', '/api/data-user.json');
-};
+  constructor(handler) {
+    this.getHandler = handler;
+  }
 
-export const getTaskTypes = () => {
-  return _getHandler('task-types', '/api/task-types.json');
-};
+  getEventData = () => {
+    return this.getHandler('event-data', '/api/data.json');
+  };
 
-export const getStatusTypes = () => {
-  return _getHandler('status-types', '/api/status-types.json');
-};
+  getUserData = () => {
+    return this.getHandler('user-data', '/api/data-user.json');
+  };
 
-export const getEventTypes = () => {
-  return _getHandler('event-types', '/api/event-types.json');
-};
+  getTaskTypes = () => {
+    return this.getHandler('task-types', '/api/task-types.json');
+  };
+
+  getStatusTypes = () => {
+    return this.getHandler('status-types', '/api/status-types.json');
+  };
+
+  getEventTypes = () => {
+    return this.getHandler('event-types', '/api/event-types.json');
+  };
+}
+
+export const api = new ApiService(_getHandler);
